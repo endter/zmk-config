@@ -214,86 +214,58 @@ layers:
   - ''
   - Base
 combos:
-- p: [12, 13]
-  k: Delete
+- p: [13, 16]
+  k: Cmd + $$mdi:keyboard-space$$
   l: [BASE]
-- p: [21, 22]
-  k: Copy
+- p: [12, 17]
+  k: LSG(SPACE)
   l: [BASE]
-- p: [22, 23]
-  k: Paste
+- p: [13, 17]
+  k: LSAG(SPACE)
   l: [BASE]
-- p: [6, 7, 8]
-  k: Scroll ↑
-  l: [BASE, MSE, MSF]
-  a: top
-  o: 0.4
-- p: [16, 17]
-  k: Esc
+- p: [0, 1, 2]
+  k: BRI INC
   l: [BASE]
 - p: [10, 11, 12]
-  k: ⏎
+  k: BRI DEC
   l: [BASE]
-  draw_separate: true
-- p: [12, 13, 16, 17]
+- p: [12, 13]
+  k: ↹
+  l: [BASE]
+- p: [11, 12, 13]
+  k: Cmd + ↹
+  l: [BASE]
+- p: [22, 23]
+  k: '`'
+  l: [BASE]
+- p: [21, 22, 23]
+  k: Cmd + `
+  l: [BASE]
+- p: [0, 1]
   k: Caps Word
   l: [BASE]
   draw_separate: true
-- p: [21, 23]
-  k: Cut
+- p: [13, 14]
+  k: $$phosphor:regular/control$$
   l: [BASE]
-  a: bottom
-  o: 0.2
-- p: [26, 27, 28]
-  k: Scroll ↓
-  l: [BASE, MSE, MSF]
-  a: bottom
-  o: 0.2
-- p: [0, 1]
-  k: Esc
+- p: [11, 21]
+  k: $$phosphor:regular/control$$
   l: [BASE]
-- p: [14, 15]
-  k: Soft Off
-  l: [FNC]
-- p: [2, 7]
-  k: Show Batt
-  l: [FNC]
-  a: top
-  o: 1.0
-- p: [3, 6]
-  k: Show Conn
-  l: [FNC]
-  a: top
-  o: 0.5
-- p: [12, 17]
-  k: Sticky Shift
+- p: [12, 22]
+  k: $$phosphor:regular/option$$
   l: [BASE]
-  draw_separate: true
-- p: [23, 26]
-  k: Snake
+- p: [13, 23]
+  k: $$phosphor:regular/command$$
   l: [BASE]
-  a: top
-  o: 0.01
-- p: [13, 16]
-  k: Kebab
+- p: [16, 17]
+  k: ;
   l: [BASE]
-  a: top
-  o: 0.1
-- p: [3, 6]
-  k: Camel
+- p: [18, 28]
+  k: $$phosphor:regular/control$$
   l: [BASE]
-  a: top
-  o: 0.1
-- p: [0, 1, 2]
-  k: $$mdi:apple$$
-  l: [FNC]
-  a: top
-  o: 0.2
-- p: [7, 8, 9]
-  k: $$mdi:penguin$$
-  l: [FNC]
-  a: top
-  o: 0.2
-- p: [0, 1]
-  k: Toggle MSE
-  l: [MSE, MSF]
+- p: [17, 27]
+  k: $$phosphor:regular/option$$
+  l: [BASE]
+- p: [16, 26]
+  k: $$phosphor:regular/command$$
+  l: [BASE]

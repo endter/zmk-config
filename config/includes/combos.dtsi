@@ -20,25 +20,54 @@
   combos {
     compatible = "zmk,combos";
 
-    COMBO(delete,            &kp DELETE,         LM2 LM1,            BASE,              40, 100)
-    COMBO(copy,              &kp LG(C),          LB3 LB2,            BASE,              50, 120)
-    COMBO(paste,             &kp LG(V),          LB2 LB1,            BASE,              50, 120)
-    COMBO(scroll_up,         &msc SCRL_UP,       RT1 RT2 RT3,        BASE MSE MSE_FAST, 50, 180, slow-release;)
-    COMBO(escape,            &kp ESC,            RM1 RM2,            BASE,              40, 0)
-    COMBO(enter,             &kp ENTER,          LM4 LM3 LM2,        BASE,              40, 220, slow-release;)
-    COMBO(caps_word,         &caps_word,         LM2 LM1 RM1 RM2,    BASE,              50, 0)
-    COMBO(cut,               &kp LG(X),          LB3 LB1,            BASE,              40, 120)
-    COMBO(scroll_down,       &msc SCRL_DOWN,     RB1 RB2 RB3,        BASE MSE MSE_FAST, 40, 180, slow-release;)
-    COMBO(escape_left,       &kp ESC,            LT4 LT3,            BASE,              40, 200, slow-release;)
-    COMBO(softoff,           &soft_off,          LM0 RM0,            FNC,               1000, 200)
-    COMBO(indbat,            &ind_bat,           LT2 RT2,            FNC,               100, 200)
-    COMBO(indcon,            &ind_con,           LT1 RT1,            FNC,               100, 200)
-    COMBO(sticky_shift,      &sk LSHFT,          LM2 RM2,             BASE,              55, 120)
-    COMBO(snake_case,        &case_snake,        LB1 RB1,             BASE,              45, 150)
-    COMBO(kebab_case,        &case_kebab,        LM1 RM1,             BASE,              45, 150)
-    COMBO(camel_case,        &case_camel,        LT1 RT1,             BASE,              45, 150)
-    COMBO(os_mac,            &os_sel OS_MAC,     LT4 LT3 LT2,         FNC,               80, 200)
-    COMBO(os_linux,          &os_sel OS_LIN,     RT2 RT3 RT4,         FNC,               80, 200)
-    COMBO(tog_mse_layer,     &tog MSE,           LT4 LT3,            MSE MSE_FAST,      40, 200, slow-release;)
+    /* BILATERAL */
+    COMBO(cmd_spc,           &kp LG(SPACE),      LM1 RM1,            BASE,              50,  100)
+    COMBO(sft_cmd_spc,       &kp LSG(SPACE),     LM2 RM2,            BASE,              50,  100)
+    COMBO(sft_alt_cmd_spc,   &kp LSAG(SPACE),    LM1 RM2,            BASE,              50,  100)
+
+    /* LEFT-HAND HORIZONTAL */
+    COMBO(F2,                &kp C_BRI_INC,      LT4 LT3 LT2,        BASE,              100, 120)
+    COMBO(F1,                &kp C_BRI_DEC,      LM4 LM3 LM2,        BASE,              100, 120)
+    COMBO(tab,               &kp TAB,            LM2 LM1,            BASE,              60,  0)
+    COMBO(cmd_tab,           &kp LG(TAB),        LM3 LM2 LM1,        BASE,              100, 0, slow-release;)
+    COMBO(tick,              &kp GRAVE,          LB2 LB1,            BASE,              80,  0)
+    COMBO(cmd_tick,          &kp LG(GRAVE),      LB3 LB2 LB1,        BASE,              100, 0, slow-release;)
+    COMBO(caps_word,         &caps_word,         LT4 LT3,            BASE,              50,  0)
+    COMBO(lctl_other,        &kp LCTRL,          LM1 LM0,            BASE,              50,  80)
+
+    /* LEFT-HAND VERTICAL */
+    COMBO(l_lctl,              &kp LCTRL,          LM3 LB3,            BASE,              80,  0)
+    COMBO(l_lalt,              &kp LALT,           LM2 LB2,            BASE,              80,  0)
+    COMBO(l_lgui,              &kp LGUI,          LM1 LB1,            BASE,              80,  0)
+
+    /* RIGHT-HAND HORIZONTAL */
+    COMBO(scln,              &kp SEMI,           RM1 RM2,            BASE,              60,  0)
+
+    /* RIGHT-HAND VERTICAL */
+    COMBO(r_lctl,              &kp RCTRL,          RM3 RB3,            BASE,              80,  0)
+    COMBO(r_lalt,              &kp RALT,           RM2 RB2,            BASE,              80,  0)
+    COMBO(r_lgui,              &kp RGUI,          RM1 RB1,            BASE,              80,  0)
+
   };
 };
+
+/* /{ */
+/*   combos { */
+/*     compatible = "zmk,combos"; */
+
+/*     COMBO(delete,            &kp DELETE,         LM2 LM1,            BASE,              40, 100) */
+/*     COMBO(copy,              &kp LG(C),          LB3 LB2,            BASE,              50, 120) */
+/*     COMBO(paste,             &kp LG(V),          LB2 LB1,            BASE,              50, 120) */
+/*     COMBO(scroll_up,         &msc SCRL_UP,       RT1 RT2 RT3,        BASE MSE MSE_FAST, 50, 180, slow-release;) */
+/*     COMBO(escape,            &kp ESC,            RM1 RM2,            BASE,              40, 0) */
+/*     COMBO(enter,             &kp ENTER,          LM4 LM3 LM2,        BASE,              40, 220, slow-release;) */
+/*     COMBO(caps_word,         &caps_word,         LM2 LM1 RM1 RM2,    BASE,              50, 0) */
+/*     COMBO(cut,               &kp LG(X),          LB3 LB1,            BASE,              40, 120) */
+/*     COMBO(scroll_down,       &msc SCRL_DOWN,     RB1 RB2 RB3,        BASE MSE MSE_FAST, 40, 180, slow-release;) */
+/*     COMBO(escape_left,       &kp ESC,            LT4 LT3,            BASE,              40, 200, slow-release;) */
+/*     COMBO(softoff,           &soft_off,          LM0 RM0,            FNC,               1000, 200) */
+/*     COMBO(indbat,            &ind_bat,           LT2 RT2,            FNC,               100, 200) */
+/*     COMBO(indcon,            &ind_con,           LT1 RT1,            FNC,               100, 200) */
+/*     COMBO(tog_mse_layer,     &tog MSE,           LT4 LT3,            MSE MSE_FAST,      40, 200, slow-release;) */
+/*   }; */
+/* }; */
